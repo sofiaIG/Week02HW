@@ -16,5 +16,5 @@ class TestSong(unittest.TestCase):
 
     def test_add_song_to_room(self):
         self.room = Room(1)
-        adding_song = self.song_1.add_songs_to_room(self.song_1.title, self.song_1.artist, self.room)
+        adding_song = self.song_1.add_songs_to_room(self.room)
         self.assertEqual("Material Girl by Madonna has been added to room 1", adding_song)
